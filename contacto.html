@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Idioma que identifica el navegador-->
+<head><!-- es lo que no se ve en la pagina web -->
+    <meta charset="UTF-8"> <!-- etiqueta meta que no se toca. Conjunto de caracteres que asimilas en tu pagina web, Encoding reginal -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>IES Sineu</title> <!-- Disciplina SEO , (ubica las paginas webs en los navegadores)  -->  
+   <link rel="preload" hred="css/styles.css" as="styles">
+   <link href="css/normalize.css" rel="stylesheet"> 
+   <link href="css/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- tipo= zalando para titulos -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  
+</head>
+
+
+
+<header class="cabezera"> 
+  
+<div class="logo container">
+  <img src="img/logoiessineucolor-300x283.jpg" width="130" height="130">
+  
+  
+  <h1>IES Sineu <span>25 anys</span></h1> 
+</div>
+</header>
+
+<div class="nav-background">
+
+<nav class="navegacio-principal container"> 
+    
+<a href="index.html">Inici</a>
+
+<a href="estudis.html">Estudis</a>
+
+<a href="about.html">Alumnat</a>
+
+<a href="contacto.html">Contacte</a>
+
+<a href="galeria.html">Galeria</a>
+
+</nav>
+
+</div>
+<body>
+    <main>
+        <div class="container">
+        <section>
+            <h2 class="titulo-contactar">Contacte</h2>
+            <form class="formulario">
+       
+    <div class="fila-inputs">
+       
+        <div class="nombre">
+            <label for="nombre">Nom:</label>
+            <input maxlength="20" type="text" id="nombre" name="nombre">
+        </div>
+        
+        <div class="telefono">
+            <label for="telefono">Telèfon:</label>
+            <input type="tel" id="telefono" name="telefono"   placeholder="Ej: 612345678" pattern="[0-9]{9}"
+                        maxlength="9" required>
+        </div>
+    </div> 
+
+        <div class="email">
+            <label for="email">Email:</label>
+            <input class="caja-form" type="email" id="email" name="email">
+        </div>
+        <div class="comentario">
+            <label for="comentario">Comentari:</label>
+             <textarea class="caja-form" id="comentario" name="comentario"></textarea>
+        </div>
+        <input class="enviar" type="submit" value="Enviar">
+        </form>
+        </section>
+        </div>
+    </main>
+        
+</body>
+
+<footer>
+  <p>Miquel Escarrer Tortosa </p>
+  <p><abbr title="Institut d'Educacció Pública de Sineu (Mallorca)">Ies Sineu</abbr>/Aplicaciones Web</p>
+</footer>
+</html>

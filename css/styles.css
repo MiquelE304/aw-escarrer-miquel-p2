@@ -1,0 +1,600 @@
+html
+body{
+
+Font-size: 62,5%;  /*hack anti personas con discapacidad visual*/
+ margin: 0;
+    height: 100%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    --Rojo:#DA0000;
+    --Negro:#000000;
+    --Blanco:#ffffff;
+    --Gris:#574D4C; /*gris tirando a marron*/
+    --Granate:#830F10;
+    --gclaro: #c3ccd4;
+    --rosa:#f29c93;
+    --chicle:#EBBAB9;
+}
+
+span{
+    font-size: 1.2rem;
+}
+
+
+.container {
+    min-width: 700px;
+    /*Estableix el mínim de l'anchura del container*/
+    max-width: 50%;
+    /*Estableix el màxim de l'anchura del container*/
+    margin: 0 auto;
+    padding: 2rem 2rem auto auto;
+}
+
+.cabezera{
+margin: 0;
+background-color: var(--rosa);
+display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo{ 
+    
+display: flex;
+align-items: center;   /* centra verticalmente */
+gap: 20px;             /* espacio entre logo y texto */
+
+}
+
+.logo h1{
+    text-align: center;
+    color:var(--Granate);
+font-size: 2rem;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+
+.logo img{
+
+ width: 90px;           /* ajusta al tamaño */
+    height: auto;
+
+}
+
+.nav-background{
+    background-color: var(--chicle);
+    text-align: center;
+display:flex;
+justify-content: flex-start;
+justify-content: space-around;               
+      padding: 10px 15px;         /* Espaciado interno */
+      font-size: 20px;            /* Tamaño de la letra */
+    margin: 0;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.navegacio-principal{
+margin: 0 ;
+display:flex;
+justify-content: flex-start;
+justify-content: space-around;
+ cursor: pointer;            /* Cambia el cursor al pasar sobre el botón */
+      transition: background-color 0.3s; /* Animación al pasar el mouse */
+}
+
+.navegacio-principal a{
+
+color: var(--Blanco);
+text-decoration: none;
+}
+
+.contenidor{
+
+    Width:120rem;
+}
+
+.navegacio-principal a:hover{
+
+    color: var(--Negro);
+
+}
+
+.UBI{
+      background-color: rgba(40, 40, 40, 0.65);
+    color: white;
+}
+
+
+.UBI h2{
+    font-size: 2.2rem;
+     text-align: center;
+     color:var(--gclaro);
+    }
+
+
+.UBI a{
+
+color:var(--gclaro);
+
+}
+
+.titulo2{
+ text-align: center;
+    color:var(--Granate);
+font-size: 2rem;
+font-family: "Zalando Sans Expanded", sans-serif;
+
+}
+
+.primera{
+
+    border: 2px solid #830F10;
+     border-radius: 8px; 
+     padding: 10px 16px; 
+     backdrop-filter: blur(4px);
+     box-shadow: 0.5rem 0.5rem 0.5rem var(--Gris);
+}
+
+
+ .primera h3 a{
+     color: inherit;          /* usa el color del título */
+    text-decoration: none;   /* quita el subrayado */
+    
+}
+
+.primera h3 a:hover{
+    text-decoration: underline;
+}
+
+.circulo{
+
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--Blanco);
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--Gris);
+}
+
+
+.segundo{
+     border: 2px solid #830F10;
+     border-radius: 8px; 
+     padding: 10px 16px; 
+     backdrop-filter: blur(4px);
+     box-shadow: 0.5rem 0.5rem 0.5rem var(--Gris);
+}
+
+
+ .segundo h3 a{
+     color: inherit;          /* usa el color del título */
+    text-decoration: none;   /* quita el subrayado */
+}
+
+.segundo h3 a:hover{
+    text-decoration: underline;
+}
+
+
+.tres{border: 2px solid #830F10;
+     border-radius: 8px; 
+     padding: 10px 16px; 
+     backdrop-filter: blur(4px);
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--Gris);
+}
+
+
+ .tres h3 a{
+     color: inherit;          /* usa el color del título */
+    text-decoration: none;   /* quita el subrayado */
+}
+
+.tres h3 a:hover{
+    text-decoration: underline;
+}
+
+
+
+.txt{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+.direccion{
+    text-align: center;
+}
+
+
+.direccion svg{
+     text-align: center;
+}
+
+
+
+
+h3{
+    font-size: 1.6rem;
+    
+}
+
+
+
+.contenedor-flex{
+text-align: center;
+
+}
+
+
+aside{
+    text-align: center;
+    background-color: var(--gclaro);
+}
+
+
+svg{
+    margin-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+.contenedor-flex{
+    display: flex;
+    justify-content: center;
+       display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 60px auto; column-gap: 30px; 
+}
+
+.primera{
+    flex-basis: calc(20% -1rem);
+
+
+}
+
+}
+
+
+
+
+
+footer{
+     font-size: 20px;
+     text-align: center;
+     justify-content: center;
+    flex-direction: row;
+    background-color:var(--Granate);
+    color: var(--Blanco);
+    margin:0;
+  
+}
+
+
+.titulo-estudis{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.linea{
+     border-bottom: 0.2rem solid var(--Negro);
+}
+
+
+.estudis{
+
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+
+.lista1{
+
+ cursor: pointer;         
+      transition: background-color 0.3s;
+
+}
+
+.lista1 a{
+    color: var(--Negro);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.lista1 a:hover{
+color: var(--Gris);
+}
+
+
+.about h2,
+.titulo1-estudis h2{
+
+font-size: 2rem;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.titulo2-estudis h3{
+
+    font-size: 1.5rem;;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+.seccion p,
+.lista{
+    font-size: 1rem;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+
+
+
+
+.titulo-galeria{
+  text-align: center;
+    font-size: 2.5rem;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+/* Contenedor principal de la galería */
+.contenedor {
+    width: 1000px;
+    margin: 4rem auto;
+    padding: 20px;
+    background-color: var(--gclaro);
+    border: 0.2rem solid var(--Negro);
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Fila superior (2 imágenes) */
+.fila1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Contenedor de las filas de abajo y la columna derecha */
+.filas-contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+}
+
+/* Columna de la izquierda (4 imágenes en 2x2) */
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filas2y3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ESTILO DE LAS IMÁGENES Y PIES DE FOTO */
+.item-galeria {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.item-galeria:hover img {
+    transform: scale(1.1);
+}
+
+/* PIE DE FOTO:  solo al pasar el cursor */
+.pie-foto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--Negro);
+    color: var(--Blanco);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.item-galeria:hover .pie-foto {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ALTURAS FIJAS  */
+.fila1 .item-galeria { height: 250px; }
+.filas2y3 .item-galeria { height: 180px; }
+.columna-derecha .item-galeria { height: 360px; } /* Altura de la imagen vertical
+
+/* Caja general galería */
+
+/* Todas las cajas */
+.img-container {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--gclaro);
+}
+
+/* Alturas */
+.fila1 .img-container {
+    height: 250px;
+}
+
+.filas2y3 .img-container {
+    height: 170px;
+}
+
+.columna-derecha .vertical {
+    height: 360px;
+}
+
+.titulo-about,
+.titulo-contactar{
+  text-align: center;
+    font-size: 2.5rem;
+font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+
+.formulario {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: 0rem 0rem 2rem var(--Negro);
+    text-decoration: none;
+}
+
+.fila-inputs {
+    display: flex;
+    gap: 20px;
+    margin: 0 1rem; /* Alinea con el resto de campos */
+}
+
+.fila-inputs .nombre,
+.fila-inputs .telefono {
+    flex: 1;
+    margin: 1rem 0; /* Quitamos el margen lateral para que no sume con el del padre */
+}
+
+
+
+
+.nombre,
+.email,
+.comentario,
+.telefono{
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1rem;
+    color: var(--Blanco);
+    background-color: var(--rosa);
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    text-align: left;
+    box-shadow: 0rem 0rem 2rem var(--Negro);
+    border: 1px solid var(--rosa);
+}
+
+.enviar{
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 1rem;
+    color: var(--Blanco);
+    background-color: var(--rosa);
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    text-align: left;
+    box-shadow: 0rem 0rem 2rem var(--Negro);
+    border: 1px solid var(--rosa);
+    cursor: pointer;            /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Animación al pasar el mouse */
+}
+
+
+
+.formulario input,
+.formulario textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem;
+    padding: 1rem 1rem;
+    box-shadow: 0rem 0rem 2rem var(--Negro);
+    border: 1px solid var(--rosa);
+}
+
+.caja-form {
+    width: 90%;
+    height: 70%;
+}
+
+
+.subtitulo-about{
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.imagen-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1rem;
+    }
+
+.imagen-about img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    display: block;
+    box-shadow: 0rem 0rem 2rem var(--Negro);
+}
+
+.imagen-about blockquote{
+
+    font-family: "Zalando Sans Expanded", sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+
+.citado{
+    font-family: "Zalando Sans Expanded", sans-serif;
+   font-size: 0.9rem;
+    text-align: center;
+    margin: 1rem 0;
+    margin-right: 12rem;
+    margin-left: 12rem;
+    border-top: 0.2rem solid var(--Negro);
+    border-bottom: 0.2rem solid var(--Negro);
+    padding: 1.2rem; 
+}
+
+
+.video {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+
+/* utilizaremos (REM) antes que (pixels) es medida absoluta, REM es ,medida relativa. *\
+/* font-size: 16px, es 100% , pero con 62,5% son 1,6rem = 16 px , 3,2rem=32px, 1.0REM=10px.*\
+/*punto negativo persona con discapacidad de vista no podra  utilizar el programa de visulizador *\
